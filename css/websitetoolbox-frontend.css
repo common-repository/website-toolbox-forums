@@ -1,0 +1,83 @@
+.comment-metadata > a time{
+	display: inline;
+	font-weight: 500;
+	color: #767676;
+	vertical-align: baseline
+}
+ol.listStyle {
+    	list-style: none !important;
+}
+.meta-nav1{
+    	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.comments-list {
+	padding-left: 0;
+	list-style: none;
+}
+.comments-list > li {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.comment-lists .children {
+	list-style: none;
+	padding-left: 0;
+}
+.comment-lists .children > li {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.wtCommentContent > p {
+    display: inline-block;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.wtCommentContent > p > a {
+    margin-right: 10px;
+}
+.wtCommentContent > p > a > img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.16), 0 0.2px 1px 0 rgba(0, 0, 0, 0.12);
+}
+#wtcomments .comment-body .comment-meta {
+    margin-bottom: 15px;
+}
+#wtcomments .avatar {
+	margin-right: 14px;
+    float: left;
+}
+#wtcomments .comment-meta .comment-metadata {
+	padding: 0;
+}
+.wtCommentContent {
+	margin-top: 0;
+}
+.wtCommentContent > div:first-child {
+	margin-bottom: 0;
+}
+#wtcomments li.comment {
+	margin-bottom: 25px;
+}
+#wtcomments ol.commentlist li.comment {
+	list-style: none;
+}
+#wtcomments .comment-reply-title h5 {
+	text-align: center;
+}
+#wtcomments .comment-reply-title h5 > a {
+	padding: 8px 24px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+#wtcomments .comment-reply-title h5 > a:hover {
+	box-shadow: 0.5px 0.5px 3px rgba(0, 102, 204, 0.2), -0.5px -0.5px 3px rgba(0, 102, 204, 0.2);
+}
+#wtcomments.comments-area ol.commentlist li.comment:nth-child(5n) {
+    border-bottom: 1px solid rgba(170,170,170,.2);
+    padding-bottom: 28px;
+}
+#wtcomments .comment-reply-title {
+	margin-top: 40px;
+}

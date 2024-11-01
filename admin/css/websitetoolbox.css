@@ -1,0 +1,223 @@
+ @keyframes wt-opacity-animation {
+  from {opacity: 0;}
+  to {oapcity: 1;}
+}
+.wt-custom-btn-group {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+}
+.wt-custom-btn-group:hover:before, .wt-custom-btn-group:hover:after {
+    display: block;
+  animation-name: wt-opacity-animation;
+  animation-duration: .3s;
+}
+.wt-custom-btn-group:before, .wt-custom-btn-group:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.wt-custom-btn-group:before {
+    content: attr(data-custom-tooltip);
+    bottom: calc(100% + 6px);
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    min-width: 300px;
+    font-size: 13px;
+}
+.wt-custom-btn-group:after {
+    content: '';
+    font-size: 0;
+    border-top: 6px solid rgba(0,0,0,.8);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    bottom: 100%;
+}
+.wt-custom-btn-group input[type="radio"] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+}
+.wt-custom-btn-group .button {
+    float: left;
+}
+.wt-custom-btn-group .button:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.wt-custom-btn-group .button ~ .button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+}
+.wt-custom-btn-group input:checked + .button {
+    background: #007cba;
+    border-color: #007cba;
+    color: #fff;
+}
+.form-table th[scope="row"] {
+    text-align: right;
+}
+#allOptions {
+    padding-top: 5px;
+}
+#allOptions ul.checkbox > li {
+    min-width: 200px;
+    float: left;
+}
+#allOptions ul.checkbox {
+    float: left;
+    max-width: 400px;
+    margin-top: 20px;
+}
+@media (max-width: 782px) {
+    .form-table th[scope="row"] {
+        text-align: left;
+    }
+}
+ 
+.custom-login-page {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.custom-login-page > h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.custom-login-page > h2:empty {
+    display: none;
+}
+
+.custom-login-page > p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.custom-login-page > b {
+    margin: 20px 0 30px;
+    display: block;
+    font-size: 14px;
+}
+
+.custom-login-page > .form-table {
+    background: #fff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.custom-login-page > .form-table tr {
+    padding: 35px 40px 0;
+}
+
+.custom-login-page > .form-table tr, 
+.custom-login-page > .form-table tr th, 
+.custom-login-page > .form-table tr td {
+    display: block;
+}
+
+.custom-login-page > .form-table tr th {
+    text-align: left;
+    padding: 0;
+    width: auto;
+}
+
+.custom-login-page > .form-table tr td {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-login-page > .form-table .submit {
+    padding: 0;
+    float: left;
+    padding-bottom: 35px;
+}
+
+.custom-login-page > .form-table .submit .button {
+    min-width: 100px;
+}
+
+.custom-login-page > .form-table .create-an-account-link {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 8px 0 42px;
+}
+
+.custom-login-page > .form-table .create-an-account-link a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.custom-login-page > .form-table #websitetoolbox_username, 
+.custom-login-page > .form-table #websitetoolbox_password {
+    width: 100%;
+    margin-top: 10px;
+    border-color: #ccc;
+}
+
+.custom-login-page > .form-table #websitetoolbox_username:focus, 
+.custom-login-page > .form-table #websitetoolbox_password:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.custom-login-page > .form-table #websitetoolbox_username.has-error, 
+.custom-login-page > .form-table #websitetoolbox_password.has-error {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 1px #dc3545;
+}
+
+.custom-login-page > .form-table #websitetoolbox_username ~ span.custom-error, 
+.custom-login-page > .form-table #websitetoolbox_password ~ span.custom-error {
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.custom-login-page > .form-table #websitetoolbox_username.has-error ~ span.custom-error, 
+.custom-login-page > .form-table #websitetoolbox_password.has-error ~ span.custom-error {
+    display: block;
+    color: #dc3545;
+}
+
+.custom-login-page > .form-table #websitetoolbox_username.has-error ~ span.custom-error, 
+.custom-login-page > .form-table #websitetoolbox_password.has-error ~ span.custom-error {
+    display: block;
+    color: #dc3545;
+}
+
+.custom-login-page > .form-table #websitetoolbox_username.has-error ~ span.custom-error a, 
+.custom-login-page > .form-table #websitetoolbox_password.has-error ~ span.custom-error a {
+    color: inherit;
+}
+
+.custom-login-page > .form-table #websitetoolbox_password ~ .forgot-password-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.custom-login-page > .form-table #websitetoolbox_password.has-error ~ .forgot-password-link {
+    display: none;
+}
+
+button.components-button.is-pressed.has-icon:has(.wt_chat_icon) {
+    background: #eaeaea !important;
+}
+
+.wt_chat_icon{
+    margin-top: 4px;
+}
+
+.dev-sidebar-category-none{
+    display: none;
+}
+
+.dev-sidebar-category-block{
+    display: block;
+}
